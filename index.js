@@ -73,6 +73,10 @@ async function runCra() {
             spinner.success({text: "Successfully created srt project!"})
         });
     }
+
+    cra.stdout.on('data', (data) => {
+        spinner.update({text: `${data ?? `Creating project...`}`})
+    })
     
     cra.stderr.on('data', (data) => {
         console.log(data)
