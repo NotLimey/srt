@@ -1,9 +1,15 @@
 {
-  "name": "srt",
+  "name": "cli-srt",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Simple npx module that helps with setting up cra-template srt",
+  "homepage": "https://limeyfy.no",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NotLimey/srt"
+  },
+  "main": "index.js",
+  "bin": "./index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

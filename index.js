@@ -58,7 +58,6 @@ async function askExtraPackages() {
 }
 
 async function runCra() {
-    process.chdir("../")
     const cra = exec(`npx create-react-app ${projectName} --template srt`)
     const spinner = await createSpinner("Creating project..").start();
 
