@@ -47,7 +47,7 @@ async function askExtraPackages() {
         type: 'input',
         message: 'Extra packages: ',
         default() {
-            return 'Packages'
+            return ''
         },
     });
 
@@ -75,7 +75,7 @@ async function runCra() {
     }
 
     cra.stdout.on('data', (data) => {
-        spinner.update({text: `${data ?? `Creating project...`}`})
+        spinner.update({text: `${data ? data.split('\n')[0] : `Creating project...`}`})
     })
     
     cra.stderr.on('data', (data) => {

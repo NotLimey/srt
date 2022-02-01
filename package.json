@@ -1,6 +1,6 @@
 {
   "name": "cli-srt",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Simple npx module that helps with setting up cra-template srt",
   "homepage": "https://limeyfy.no",
   "type": "module",
